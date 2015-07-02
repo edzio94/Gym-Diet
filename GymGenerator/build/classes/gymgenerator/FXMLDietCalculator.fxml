@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane minHeight="800.0" minWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymgenerator.FXMLDietCalculatorController">
+   <children>
+      <TableView id="dietTable" fx:id="dietTable" editable="true" layoutX="-1.0" layoutY="77.0" minHeight="438.0" minWidth="330.0" prefHeight="516.0" prefWidth="532.0">
+        <columns>
+          <TableColumn id="dietColumn1" fx:id="dietColumn1" prefWidth="213.0" text="Food" />
+          <TableColumn id="dietTable2" fx:id="dietColumn2" prefWidth="112.0" text="Grams" />
+            <TableColumn fx:id="bTableColumn" prefWidth="41.0" text="B" />
+            <TableColumn fx:id="tTableColumn" prefWidth="41.0" text="T" />
+            <TableColumn fx:id="wTableColumn" prefWidth="47.0" text="W" />
+            <TableColumn fx:id="kcalTableColumn" prefWidth="75.0" text="Kcal" />
+        </columns>
+      </TableView>
+      <Pane fx:id="dataPane" layoutY="593.0" prefHeight="62.0" prefWidth="368.0">
+         <children>
+            <Label fx:id="kcalLabel" minHeight="31.0" minWidth="129.0" text="Kcal:" />
+            <Label fx:id="wLabel" layoutX="163.0" layoutY="46.0" minHeight="16.0" minWidth="83.0" text="W:" />
+            <Label fx:id="tLabel" layoutX="2.0" layoutY="46.0" minHeight="16.0" minWidth="79.0" text="T:" />
+            <Label fx:id="bLabel" layoutX="163.0" layoutY="8.0" minHeight="16.0" minWidth="102.0" text="B:" />
+            <Label fx:id="bmiLabel" layoutX="228.0" layoutY="23.0" text="BMI:" />
+         </children>
+      </Pane>
+      <Pane layoutX="531.0" layoutY="230.0" prefHeight="486.0" prefWidth="447.0">
+         <children>
+            <Label layoutX="381.0" layoutY="192.0" text="grams" />
+            <TextField fx:id="gramsTextField" layoutX="360.0" layoutY="149.0" prefHeight="31.0" prefWidth="83.0" />
+            <ListView fx:id="dataList" layoutX="37.0" minHeight="400.0" minWidth="316.0" />
+            <Button fx:id="addDataButton" layoutX="380.0" layoutY="217.0" mnemonicParsing="false" onAction="#addButtonClicked" text="Add" />
+         </children>
+      </Pane>
+      <AnchorPane layoutX="614.0" prefHeight="246.0" prefWidth="377.0">
+         <children>
+            <Label layoutX="366.0" layoutY="52.0" text="Kg" />
+            <Label layoutX="364.0" layoutY="83.0" text="Cm" />
+            <Label layoutX="219.0" layoutY="52.0" prefHeight="16.0" prefWidth="50.0" text="Weight" />
+            <Label layoutX="223.0" layoutY="85.0" text="Height" />
+            <CheckBox fx:id="gainWeightCheckBox" layoutX="244.0" layoutY="141.0" mnemonicParsing="false" text="Gain weight" />
+            <Button fx:id="deleteProductButton" layoutX="-7.0" layoutY="101.0" mnemonicParsing="false" onAction="#deleteButtonClicked" text="Delete product" />
+            <CheckBox fx:id="loseWeightCheckBox" layoutX="244.0" layoutY="114.0" mnemonicParsing="false" text="Lose weight" />
+            <Button fx:id="generateDataButton" layoutX="273.0" layoutY="183.0" mnemonicParsing="false" onAction="#dataButtonClicked" text="Generate" />
+            <TextField fx:id="heightTextField" layoutX="271.0" layoutY="78.0" prefHeight="26.0" prefWidth="83.0" />
+            <TextField fx:id="weightTextField" layoutX="271.0" layoutY="47.0" prefHeight="26.0" prefWidth="83.0" />
+            <Button fx:id="nextMealButton" layoutX="-5.0" layoutY="159.0" mnemonicParsing="false" onAction="#nextMealClicked" text="Add next meal" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="backButton" layoutY="24.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Back" />
+   </children>
+</Pane>

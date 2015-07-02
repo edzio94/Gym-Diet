@@ -1,0 +1,47 @@
+BICEPS
+ exercises.add(new Attributes("Uginanie",0,0,0,0,0,10,0,true));
+             exercises.add(new Attributes("Uginanie supinacja",0,0,0,0,0,10,0,true));
+              exercises.add(new Attributes("Podci¹ganie podchwyt",0,0,0,0,0,10,0,true));
+               exercises.add(new Attributes("Uginanie nadchwyt",0,0,0,0,0,10,0,true));
+                exercises.add(new Attributes("Siódemkowanie",0,0,0,0,0,10,0,true));
+	exercises.add(new Attributes("Podci¹ganieTrójkat",0,4,0,0,0,10,0,true));
+	exercises.add(new Attributes("M³otki",0,0,0,0,0,10,0,true));
+PLECY
+            exercises.add(new Attributes("Deadlift",4,10,2,2,0,2,4,true));
+             exercises.add(new Attributes("Wios³owanie",2,10,0,0,0,2,0,true));
+              exercises.add(new Attributes("Podciaganie nadchwyt",0,10,0,2,0,10,4,true));
+               exercises.add(new Attributes("Wios³owanie sztangielk¹",4,10,2,2,0,2,4,true));
+	exercises.add(new Attributes("Trójkat gór¹",0,10,0,0,0,2,0,false));
+	exercises.add(new Attributes("trojkat dolem",0,10,0,2,0,2,2,false));
+	exercises.add(new Attributes("unoszenie tulowia",0,10,0,0,0,0,0,true));
+Klata
+        exercises.add(new Attributes("BenchPress",0,0,10,4,4,0,0,true));
+         exercises.add(new Attributes("BenchPressUp",0,0,10,6,3,0,0,true));
+          exercises.add(new Attributes("BenchPressDown",0,0,10,3,5,0,0,true));
+           exercises.add(new Attributes("Rozpietki",0,0,10,2,3,0,0,true));
+            exercises.add(new Attributes("Za glowe",0,0,10,0,4,0,0,true));
+	exercises.add(new Attributes("Pompki",0,0,10,0,4,0,0,true));
+
+
+
+Nogi
+             exercises.add(new Attributes("Przysiad",10,0,0,0,0,0,0,true));
+              exercises.add(new Attributes("Przysiad przód",10,0,0,0,0,0,0,true));
+               exercises.add(new Attributes("Maszyna",10,0,0,0,0,0,0,false));
+                exercises.add(new Attributes("Wykroki",10,0,0,0,0,0,0,true));
+		exercises.add(new Attributes("Maszyna le¿¹c przodem",10,0,0,0,0,0,0,false));
+Bary
+  exercises.add(new Attributes("Wycisk sztangielek",0,0,0,10,2,0,2,true));
+        exercises.add(new Attributes("¯o³nierskie",0,0,0,10,4,0,0,true));
+        exercises.add(new Attributes("Na boki",0,0,10,10,4,0,0,true));
+        exercises.add(new Attributes("Przed siebie",0,0,4,10,4,0,2,true));
+	exercises.add(new Attributes("Za siebie",0,0,2,10,2,0,4,true));
+	exercises.add(new Attributes("sztanga w opadzie za dupa",0,0,2,10,4,0,2,true));
+
+Triceps
+        exercises.add(new Attributes("Wycisk w¹sko",0,0,5,0,10,0,0,true));
+        exercises.add(new Attributes("Atlas nadchwyt",0,0,5,0,10,0,0,true));
+        exercises.add(new Attributes("Dipsy",0,0,5,0,10,0,0,true));
+        exercises.add(new Attributes("Wyciskanie francuskie",0,0,0,0,10,0,0,true));
+	exercises.add(new Attributes("Pompki Ty³em",0,0,2,2,10,0,0,true));
+	exercises.add(new Attributes("Pompki w¹sko",0,0,4,3,10,0,0,true));

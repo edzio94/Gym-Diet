@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymgenerator.FXMLPlanGeneratorController">
+   <children>
+      <GridPane fx:id="planGridPane" gridLinesVisible="true" hgap="1.0" layoutX="57.0" layoutY="51.0" prefHeight="407.0" prefWidth="1017.0" vgap="1.0" AnchorPane.bottomAnchor="542.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="278.0" AnchorPane.topAnchor="51.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="0.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="20.0" prefHeight="100.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label text="Monday" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label text="Tuesday" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label prefHeight="37.0" prefWidth="106.0" text="Wednesday" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label prefHeight="31.0" prefWidth="61.0" text="Thursday" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label prefHeight="32.0" prefWidth="48.0" text="Friday" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+      <Pane layoutX="1022.0" layoutY="48.0">
+         <children>
+            <MenuButton fx:id="typeMenuButton" layoutX="174.0" layoutY="25.0" mnemonicParsing="false" text="Choose">
+               <items>
+                  <MenuItem id="powerButton" fx:id="powerButton" mnemonicParsing="false" onAction="#powerIsClicked" text="Power" />
+                  <MenuItem fx:id="gainButton" mnemonicParsing="false" onAction="#gainIsClicked" text="Gain" />
+                  <MenuItem fx:id="conditionButton" mnemonicParsing="false" onAction="#conditionIsClicked" text="Look" />
+               </items>
+            </MenuButton>
+            <Button fx:id="planGeneratorButton" layoutX="105.0" layoutY="196.0" mnemonicParsing="false" onAction="#generatePlan" text="Generate Plan" />
+            <TextField fx:id="daysTextField" layoutX="165.0" layoutY="141.0" prefHeight="21.0" prefWidth="60.0" />
+            <Label layoutX="41.0" layoutY="146.0" text="Days per week" />
+            <Label layoutX="20.0" layoutY="27.0" text="Type of Training">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="gymRadioButton" layoutX="60.0" layoutY="61.0" mnemonicParsing="false" text="Gym" />
+         </children>
+      </Pane>
+      <Pane layoutX="46.0" layoutY="473.0">
+         <children>
+            <Label fx:id="restLabel" layoutX="6.0" layoutY="21.0" prefHeight="53.0" prefWidth="335.0" text="Rest between Sets:" />
+         </children>
+      </Pane>
+      <Button fx:id="backButton" layoutX="57.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Back" />
+   </children>
+</AnchorPane>
